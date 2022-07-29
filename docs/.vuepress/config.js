@@ -22,6 +22,10 @@ module.exports = {
         link: '/design-specification'
       },
       {
+        text: '编程规约',
+        link: '/programming-specification'
+      },
+      {
         text: '单元测试',
         link: '/unit-test'
       },
