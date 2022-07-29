@@ -18,6 +18,10 @@ module.exports = {
         link: '/'
       },
       {
+        text: '单元测试',
+        link: '/unit-test'
+      },
+      {
         text: 'MySQL 数据库',
         link: '/mysql-database'
       }
