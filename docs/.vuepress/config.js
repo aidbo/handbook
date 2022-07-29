@@ -22,6 +22,10 @@ module.exports = {
         link: '/unit-test'
       },
       {
+        text: '安全规约',
+        link: '/security-specification'
+      },
+      {
         text: 'MySQL 数据库',
         link: '/mysql-database'
       }
