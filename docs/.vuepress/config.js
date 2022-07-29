@@ -18,6 +18,10 @@ module.exports = {
         link: '/'
       },
       {
+        text: '设计规约',
+        link: '/design-specification'
+      },
+      {
         text: '单元测试',
         link: '/unit-test'
       },
