@@ -7,32 +7,32 @@
 
 2.【强制】所有编程相关的命名严禁使用拼音与英文混合的方式，更不允许直接使用中文的方式。  
 说明: 正确的英文拼写和语法可以让阅读者易于理解，避免歧义。注意，即使纯拼音命名方式也要避免采用。  
-正例: ali / alibaba / taobao / kaikeba / aliyun / youku / hangzhou 等国际通用的名称，可视同英文。  
-反例: DaZhePromotion【打折】/ getPingfenByName()【评分】 / String fw【福娃】/ int 变量名 = 3
+正例: `ali / alibaba / taobao / kaikeba / aliyun / youku / hangzhou` 等国际通用的名称，可视同英文。  
+反例: `DaZhePromotion【打折】/ getPingfenByName()【评分】 / String fw【福娃】/ int 变量名 = 3`
 
 3.【强制】代码和注释中都要避免使用任何人类语言中的种族歧视性或侮辱性词语。  
-正例: blockList / allowList / secondary  
-反例: blackList / whiteList / slave / SB / WTF
+正例: `blockList / allowList / secondary`  
+反例: `blackList / whiteList / slave / SB / WTF`
 
-4.【强制】类名使用 UpperCamelCase 风格，以下情形例外:DO / PO / DTO / BO / VO / UID 等。  
-正例: ForceCode / UserDO / HtmlDTO / XmlService / TcpUdpDeal / TaPromotion  
-反例: forcecode / UserDo / HTMLDto / XMLService / TCPUDPDeal / TAPromotion
+4.【强制】类名使用 UpperCamelCase 风格，以下情形例外:`DO / PO / DTO / BO / VO / UID` 等。  
+正例: `ForceCode / UserDO / HtmlDTO / XmlService / TcpUdpDeal / TaPromotion`  
+反例: `forcecode / UserDo / HTMLDto / XMLService / TCPUDPDeal / TAPromotion`
 
 5.【强制】方法名、参数名、成员变量、局部变量都统一使用 lowerCamelCase 风格。  
-正例: localValue / getHttpMessage() / inputUserId
+正例: `localValue / getHttpMessage() / inputUserId`
 
 6.【强制】常量命名应该全部大写，单词间用下划线隔开，力求语义表达完整清楚，不要嫌名字长。  
-正例: MAX_STOCK_COUNT / CACHE_EXPIRED_TIME  
-反例: MAX_COUNT / EXPIRED_TIME
+正例: `MAX_STOCK_COUNT / CACHE_EXPIRED_TIME`  
+反例: `MAX_COUNT / EXPIRED_TIME`
 
 7.【强制】抽象类命名使用 Abstract 或 Base 开头;异常类命名使用 Exception 结尾，测试类命名以它要 测试的类的名称开始，以 Test 结尾。
 
-8.【强制】类型与中括号紧挨相连来定义数组。 正例:定义整形数组 int[] arrayDemo。  
+8.【强制】类型与中括号紧挨相连来定义数组。 正例:定义整形数组 `int[] arrayDemo`。  
 反例: 在 main 参数中，使用 String args[] 来定义。
 
 9.【强制】POJO 类中的任何布尔类型的变量，都不要加 is 前缀，否则部分框架解析会引起序列化错误。  
-说明: 本文 MySQL 规约中的建表约定第 1 条，表达是与否的变量采用 is_xxx 的命名方式，所以需要在<resultMap> 设置从 is_xxx 到 xxx 的映射关系。  
-反例: 定义为布尔类型 Boolean isDeleted 的字段，它的 getter 方法也是 isDeleted()，部分框架在反向解析时，“误以为”对应的字段名称是 deleted，导致字段获取不到，得到意料之外的结果或抛出异常。
+说明: 本文 MySQL 规约中的建表约定第 1 条，表达是与否的变量采用 `is_xxx` 的命名方式，所以需要在`<resultMap>` 设置从 is_xxx 到 xxx 的映射关系。  
+反例: 定义为布尔类型 Boolean isDeleted 的字段，它的 getter 方法也是 `isDeleted()`，部分框架在反向解析时，“误以为”对应的字段名称是 deleted，导致字段获取不到，得到意料之外的结果或抛出异常。
 
 10.【强制】包名统一使用小写，点分隔符之间有且仅有一个自然语义的英语单词。包名统一使用单数形式，但是类名如果有复数含义，类名可以使用复数形式。
 正例: 应用工具类包名为 com.alibaba.ei.kunlun.aap.util;类名为 MessageUtils(此规则参考 spring 的框架结构)。
@@ -68,8 +68,8 @@ class Son extends ConfusingName {
 反例: 常见的方法内变量为 int a; 的定义方式。
 
 14.【推荐】在常量与变量命名时，表示类型的名词放在词尾，以提升辨识度。  
-正例:startTime / workQueue / nameList / TERMINATED_THREAD_COUNT  
-反例:startedAt / QueueOfWork / listName / COUNT_TERMINATED_THREAD
+正例: `startTime / workQueue / nameList / TERMINATED_THREAD_COUNT`  
+反例: `startedAt / QueueOfWork / listName / COUNT_TERMINATED_THREAD`
 
 15.【推荐】如果模块、接口、类、方法使用了设计模式，在命名时要体现出具体模式。  
 说明: 将设计模式体现在名字中，有利于阅读者快速理解架构设计思想。  
@@ -85,7 +85,7 @@ class Son extends ConfusingName {
 
 17. 接口和实现类的命名有两套规则:
 1) 【强制】对于 Service 和 DAO 类，基于 SOA 的理念，暴露出来的服务一定是接口，内部的实现类用 Impl 的后缀 与接口区别。
-正例:CacheServiceImpl 实现 CacheService 接口。  
+正例: CacheServiceImpl 实现 CacheService 接口。  
 2) 【推荐】如果是形容能力的接口名称，取对应的形容词为接口名(通常是 –able 结尾的形容词)。  
 正例: AbstractTranslator 实现 Translatable。
 
@@ -104,7 +104,7 @@ A) Service / DAO 层方法命名规约:
   6) 修改的方法用 update 做前缀。  
 
 B) 领域模型命名规约:
-1) 数据对象:xxxDO，xxx 即为数据表名。 
-2) 数据传输对象:xxxDTO，xxx 为业务领域相关的名称。 
-3) 展示对象:xxxVO，xxx 一般为网页名称。
+1) 数据对象: xxxDO，xxx 即为数据表名。 
+2) 数据传输对象: xxxDTO，xxx 为业务领域相关的名称。 
+3) 展示对象: xxxVO，xxx 一般为网页名称。
 4) POJO 是 DO / DTO / BO / VO 的统称，禁止命名成 xxxPOJO。
