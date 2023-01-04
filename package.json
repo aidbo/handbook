@@ -1,18 +1,16 @@
 {
   "name": "handbook",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "dev": "vitepress dev docs --port 8080 --max-old-space-size=50000",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.49",
-    "vue": "^3.2.37",
-    "vuepress": "2.0.0-beta.49"
+    "vitepress": "1.0.0-alpha.35",
+    "vue": "^3.2.45"
   }
 }
