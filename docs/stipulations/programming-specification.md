@@ -2,30 +2,40 @@
 layout: doc
 ---
 
-# 编程风格规约
+# 编程规约
 
-## JavaScript 风格
+## JavaScript
 
-1. 【推荐】使用 pnpm 作为包管理器
-2. 【推荐】使用 ni 进行常规的操作
+<Item>
+<ItemRecommend>工具</ItemRecommend>
 
-3. 【推荐】使用 Eslint 和配置自动格式化
+| 作用 | 工具 | 备注 |
+|-----|-----|------|
+| 包管理器 | pnpm | |
+| 包管理器别名 | ni | |
+| 代码格式化 | eslint | `pnpm add -D eslint @antfu/eslint-config` |
+| 更新依赖 | taze | |
+| release | bumpp| |
 
-```shell
-pnpm add -D eslint @antfu/eslint-config
-```
+<details>
+  <summary>@antfu/eslint-config 的特点</summary>
+  <ul>
+    <li>自动修复格式（旨在独立使用，无需 Prettier） </li>
+    <li>可直接用于 TypeScript、Vue</li>
+    <li>还支持对 json、yaml、markdown 进行 lint</li>
+    <li>按字母序排序导入，去除末尾逗号</li>
+    <li>合理的默认设置，最佳实践，仅需一行配置</li>
+    <li>样式原则：阅读简洁，差异稳定</li>
+    <li>单引号，无分号</li>
+  </ul>
 
-- 单引号，无分号
-- 自动修复格式（旨在独立使用，无需 Prettier）
-- 可直接用于 TypeScript、Vue
-- 还支持对 json、yaml、markdown 进行 lint
-- 按字母序排序导入，去除末尾逗号
-- 合理的默认设置，最佳实践，仅需一行配置
-- 样式原则：阅读简洁，差异稳定
+</details>
 
-4. 【推荐】使用 taze 更新依赖
-5. 【推荐】使用 bumpp 发布新版本
-7. 【参考】命令
+</Item>
+
+
+<Item>
+<ItemRecommend>脚本命令</ItemRecommend>
 
 | 命令 | 环境 | 目的 |
 |------|-----|----|
@@ -37,8 +47,9 @@ pnpm add -D eslint @antfu/eslint-config
 | test | | 使用 Vitest 进行测试 |
 | docs | | 运行 `nr docs` 以启动文档开发服务器。使用 `nr docs：build` 构建用于生产的文档 |
 | release | | 使用 bumpp 发布新版本 |
+</Item>
 
-## Java 风格
+## Java
 
 1.【强制】所有编程相关的命名均不能以下划线或美元符号开始，也不能以下划线或美元符号结束。
 反例: `_name / __name / $Object / name_ / name$ / Object$`

@@ -3,7 +3,6 @@ layout: home
 
 hero:
   name: 手册
-  text: 自用技术手册
   tagline: JavaScript, Java, MySQL
   image:
     src: https://avatars.githubusercontent.com/u/18254135

@@ -1,16 +1,27 @@
 {
   "name": "handbook",
+  "type": "module",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.35.2",
+    "eslint": "^8.34.0",
+    "flexsearch": "^0.7.31",
+    "markdown-it": "^13.0.1",
+    "unplugin-vue-components": "^0.23.0",
+    "vite": "^4.1.1",
     "vitepress": "1.0.0-alpha.46",
+    "vitepress-plugin-search": "1.0.4-alpha.19",
     "vue": "^3.2.47"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
   }
 }
