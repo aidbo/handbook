@@ -13,7 +13,7 @@ const config = {
     lastUpdated: true,
     cleanUrls: true,
     themeConfig: {
-        logo: '/favicon.svg',
+        logo: 'https://avatars.githubusercontent.com/u/18254135',
         sidebar: [
             {
                 text: '规约',
