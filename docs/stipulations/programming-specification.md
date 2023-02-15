@@ -1,3 +1,7 @@
+---
+layout: doc
+---
+
 # 编程风格规约
 
 ## JavaScript 风格

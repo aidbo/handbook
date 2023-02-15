@@ -17,8 +17,8 @@ const config = {
         sidebar: [
             {
                 text: '规约',
+                link: '/stipulations/',
                 items: [
-                    {text: '关于手册', link: '/stipulations/index'},
                     {text: '设计规约', link: '/stipulations/design-specification'},
                     {text: '编程风格规约', link: '/stipulations/programming-specification'},
                     {text: '单元测试', link: '/stipulations/unit-test'},
