@@ -1,4 +1,4 @@
-import { defineConfigWithTheme } from 'vitepress'
+import { defineConfig } from 'vitepress'
 
 /**
  * @type {import('vitepress').UserConfig}
@@ -42,4 +42,4 @@ const config = {
     }
 }
 
-export default defineConfigWithTheme(config)
+export default defineConfig(config)
