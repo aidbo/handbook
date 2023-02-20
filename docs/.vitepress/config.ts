@@ -17,6 +17,7 @@ const config: UserConfig = {
         items: [
           { text: 'Visual Studio Code', link: '/memo/vscode' },
           { text: 'Git', link: 'https://chodocs.cn/memo/git-command/' },
+          { text: 'Modern Unix', link: 'https://github.com/ibraheemdev/modern-unix' },
         ],
       },
 
@@ -31,13 +32,6 @@ const config: UserConfig = {
           { text: '单元测试', link: '/stipulations/unit-test' },
           { text: '安全规约', link: '/stipulations/security-specification' },
           { text: 'MySQL 数据库', link: '/stipulations/mysql-database' },
-        ],
-      },
-      {
-        text: '备忘',
-        items: [
-          { text: 'Visual Studio Code', link: '/memo/vscode' },
-          { text: 'Git', link: 'https://chodocs.cn/memo/git-command/' },
         ],
       },
     ],
