@@ -1,5 +1,6 @@
 import type { UserConfig } from 'vitepress'
 import { defineConfig } from 'vitepress'
+import algolia from './algolia'
 
 const config: UserConfig = {
   appearance: true,
@@ -46,6 +47,7 @@ const config: UserConfig = {
       next: '下一篇',
     },
     returnToTopLabel: '返回顶部',
+    algolia,
   },
 }
 
