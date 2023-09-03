@@ -28,7 +28,7 @@ const config: UserConfig = {
         text: '规约',
         link: '/stipulations/',
         items: [
-          {text: '命名参考', link: '/stipulations/naming-cheatsheet'},
+          { text: '命名参考', link: '/stipulations/naming-cheatsheet' },
           { text: '设计规约', link: '/stipulations/design-specification' },
           { text: '编程规约', link: '/stipulations/programming-specification' },
           { text: '单元测试', link: '/stipulations/unit-test' },

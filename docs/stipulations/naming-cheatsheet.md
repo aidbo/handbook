@@ -83,12 +83,12 @@ function getUserName() {
 ```js
 class UserService {
   /* Method name duplicates the context (which is "User") */
-  getUserSettings(event) { 
+  getUserSettings(event) {
     // ...
   }
 
   /* Reads nicely as `userService.getSettings()` */
-  getSettings(event) { 
+  getSettings(event) {
     // ...
   }
 }
@@ -101,13 +101,13 @@ class UserService {
 ```jsx
 /* Bad */
 const isEnabled = itemCount > 3
-if(!isEnabled) {
+if (!isEnabled) {
   // ...
 }
 
 /* Good */
 const isDisabled = itemCount <= 3
-if(isDisabled) {
+if (isDisabled) {
   // ...
 }
 ```
@@ -145,7 +145,7 @@ Accesses data immediately (i.e. shorthand getter of internal data).
 
 ```js
 function getUserFullName() {
-  return this.firstName + ' ' + this.lastName;
+  return `${this.firstName} ${this.lastName}`
 }
 ```
 
@@ -156,14 +156,14 @@ function getUserFullName() {
 Sets a variable in a declarative way, with value `A` to value `B`.
 
 ```js
-let fruits = 0;
+let fruits = 0
 
 function setFruits(nextFruits) {
-  fruits = nextFruits;
+  fruits = nextFruits
 }
 
-setFruits(5);
-console.log(fruits); // 5
+setFruits(5)
+console.log(fruits) // 5
 ```
 
 ### `reset`
@@ -192,7 +192,7 @@ Request for some data, which takes some indeterminate time (i.e. database reques
 function fetchUsers() {
   return this.userRepository.createQueryBuilder()
     .where('user.isActive = :isActive', { isActive: true })
-    .getMany();
+    .getMany()
 }
 ```
 
@@ -204,7 +204,7 @@ For example, if you have a collection of selected filters on a search page, remo
 
 ```js
 function removeFilter(filters, filterName) {
-  return filters.filter((name) => name !== filterName)
+  return filters.filter(name => name !== filterName)
 }
 
 const selectedFilters = ['price', 'availability', 'size']
@@ -221,7 +221,7 @@ Imagine you are a content editor, and there is that notorious post you wish to g
 
 ```js
 function deleteUser(id) {
-   return this.userRepository.delete(id);
+  return this.userRepository.delete(id)
 }
 ```
 
@@ -233,7 +233,7 @@ function deleteUser(id) {
 
 ```js
 function composePageUrl(pageName, pageId) {
-  return (pageName.toLowerCase() + '-' + pageId)
+  return (`${pageName.toLowerCase()}-${pageId}`)
 }
 ```
 
@@ -255,7 +255,7 @@ function filter(list, predicate) {
 
 /* Function operating exactly on posts */
 function getRecentPosts(posts) {
-  return filter(posts, (post) => post.date === Date.now())
+  return filter(posts, post => post.date === Date.now())
 }
 ```
 
@@ -276,9 +276,8 @@ const color = 'blue'
 const isBlue = color === 'blue' // characteristic
 const isPresent = true // state
 
-if (isBlue && isPresent) {
+if (isBlue && isPresent)
   console.log('Blue is present!')
-}
 ```
 
 ### `has`
