@@ -28,12 +28,19 @@ const config: UserConfig = {
         text: '规约',
         link: '/stipulations/',
         items: [
-          { text: '命名参考', link: '/stipulations/naming-cheatsheet' },
-          { text: '设计规约', link: '/stipulations/design-specification' },
-          { text: '编程规约', link: '/stipulations/programming-specification' },
+          { text: '设计', link: '/stipulations/design-specification' },
+          { text: '编程', link: '/stipulations/programming-specification' },
           { text: '单元测试', link: '/stipulations/unit-test' },
-          { text: '安全规约', link: '/stipulations/security-specification' },
+          { text: '安全', link: '/stipulations/security-specification' },
           { text: 'MySQL 数据库', link: '/stipulations/mysql-database' },
+        ],
+      },
+      {
+        text: '命名',
+        link: '/naming/',
+        items: [
+          { text: 'JavaScript', link: '/naming/javascript' },
+          { text: 'REST API', link: '/naming/resource' },
         ],
       },
     ],

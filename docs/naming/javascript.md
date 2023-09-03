@@ -2,7 +2,7 @@
 layout: doc
 ---
 
-# 命名参考表
+# JavaScript 命名
 
 命名事物很难。此表试图使其更容易。
 
@@ -330,3 +330,7 @@ const friend = ['Bob', 'Tony', 'Tanya']
 const friend = 'Bob'
 const friends = ['Bob', 'Tony', 'Tanya']
 ```
+
+---
+
+https://github.com/NarHakobyan/awesome-nest-boilerplate/blob/main/docs/naming-cheatsheet.md
