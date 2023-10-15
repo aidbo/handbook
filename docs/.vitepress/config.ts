@@ -43,6 +43,13 @@ const config: UserConfig = {
           { text: 'REST API', link: '/naming/resource' },
         ],
       },
+      {
+        text: '杂项',
+        link: '/chore/',
+        items: [
+          { text: '墙内部署开发环境', link: '/chore/inside-the-walls' },
+        ],
+      },
     ],
     aside: true,
     socialLinks: [
