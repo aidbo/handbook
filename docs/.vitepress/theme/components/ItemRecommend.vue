@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span style="color: yellow">【推荐】</span>
+    <span style="color: #d2d97a">【推荐】</span>
     <span>
       <slot />
     </span>

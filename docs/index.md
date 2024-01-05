@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: 手册
-  tagline: JavaScript, Java, MySQL
+  name: 帮博工作手册
+  tagline: 软件开发、测试、运维，包罗万象
   image:
     src: https://avatars.githubusercontent.com/u/18254135
     alt: avatar
